@@ -27,12 +27,14 @@
     
   \item Mail
     
-  \item Transaction bancaires
+  \item Transactions bancaires
+  
+  \item Chiffrement des données sensibles (militaires ou privées)
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Un codage ultime?}
-  Seul quelqu'un qui connaitraît la clé pourrait décoder.
+  Seul quelqu'un qui connaitraît la clé pourrait décoder : est-ce réellement possible ?
   \end{frame}
 
 \begin{frame}{Exemple : chiffrement de César}
@@ -47,17 +49,23 @@ $$A\rightarrow C, B\rightarrow D, \text{...}$$
 \end{frame}
 
 \begin{frame}{Veni Vidi Decrypti}
-  26 décalages possibles.
+  Vingt-six possibilités pour le décalage utilisé : il est possible de toutes les tester.
   \end{frame}
 
 \begin{frame}{Énumération des clés}
-  Énumérer les clés possibles (décalages). Regarder tous les résultats.
+  \begin{itemize}
+  
+  \item Il est possible d'énumérer toutes les clés.
+  
+  \item Dans la majorité des algorithmes employés, l'ensemble des clés est fini.
+  
+  \item Même si ce n'est pas le cas, la mémoire allouée au stockage de la clé est limitée : l'ensemble des clés utilisables est fini.
+  
+  \end{itemize}
   \end{frame}
 
 \begin{frame}{Complexité}
-  Le calcul, c'est pas gratuit.
-
-  Trop de clés -> trop de calcul, trop de résultats
+  L'objectif n'est pas de créer un chiffrement incassable, mais un chiffrement qui soit trop coûteux à casser.
   
   \begin{figure}
   \centering

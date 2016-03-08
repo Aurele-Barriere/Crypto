@@ -27,12 +27,14 @@
     
   \item Mail
     
-  \item Transaction bancaires
+  \item Transactions bancaires
+  
+  \item Chiffrement des données sensibles (militaires ou privées)
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Un codage ultime?}
-  Seul quelqu'un qui connaitraît la clé pourrait décoder.
+  Seul quelqu'un qui connaitraît la clé pourrait décoder : est-ce réellement possible ?
   \end{frame}
 
 \begin{frame}{Exemple : chiffrement de César}
@@ -45,6 +47,7 @@ $$A\rightarrow C, B\rightarrow D, \text{...}$$
   \includegraphics[scale = 0.25]{cesar.png}
 \end{figure}
 \end{frame}
+
 
 \begin{frame}{Casser le code de César}
 \begin{block}{}
@@ -99,6 +102,23 @@ iravivqvqrpelcgv\\
   Le calcul, c'est pas gratuit.
 
   Trop de clés $\Rightarrow$ trop de calcul, trop de résultats
+
+
+\begin{frame}{Énumération des clés}
+  \begin{itemize}
+  
+  \item Il est possible d'énumérer toutes les clés.
+  
+  \item Dans la majorité des algorithmes employés, l'ensemble des clés est fini.
+  
+  \item Même si ce n'est pas le cas, la mémoire allouée au stockage de la clé est limitée : l'ensemble des clés utilisables est fini.
+  
+  \end{itemize}
+  \end{frame}
+
+\begin{frame}{Complexité}
+  L'objectif n'est pas de créer un chiffrement incassable, mais un chiffrement qui soit trop coûteux à casser.
+
   
   \begin{figure}
   \centering

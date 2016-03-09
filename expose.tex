@@ -136,20 +136,56 @@ Ensemble de clés fini
   
   \begin{figure}
   \centering
-  \includegraphics[scale = 0.3]{xkcdpassword_strength.png}
+  \includegraphics[scale = 0.2]{xkcdpassword_strength.png}
   \end{figure}
   \end{frame}
 
 \begin{frame}{D'autres exemples}
-  Hill
-
-  Vigenere
+  \begin{block}{Hill}
+\centering
+    $\begin{pmatrix}
+0 & 1 & 0\\
+3 & 0 & 2\\
+0 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}
+=
+\begin{pmatrix}
+2\\
+9\\
+5
+\end{pmatrix}$
+\end{block}
+  \begin{block}{Vigenere}
+\centering
+\begin{tabular}{ c c c c c c c }
+M & E & S & S & A & G & E\\
+\hline
+C & L & E & C & L & E & C\\
+\hline
+O & P & W & U & L & K & G
+\end{tabular}
+\end{block}
   \end{frame}
 
 \begin{frame}{Analyse fréquentielle}
-  Chiffres pour matrices de Hill
+  \begin{alertblock}{Trop de clés}
+    Matrices 3$\times$3 : 5429503678976
+    
+    Matrices 10$\times$10 : \\
+314293064158293883017435778850162642728266998876247525637
+417317539899590842010402346543259906970228933096407508161
+1719197835869803511992549376
+    \end{alertblock}
 
-  Fréquences français
+\begin{figure}
+\centering
+\includegraphics[scale = 0.4]{distribution.png}
+\end{figure}
   \end{frame}
 
 
